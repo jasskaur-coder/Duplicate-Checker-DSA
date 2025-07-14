@@ -45,3 +45,8 @@ document.getElementById("checkBtn").addEventListener("click", () => {
     `;
   }
 });
+
+document.getElementById("resetBtn").addEventListener("click", () => {
+  document.getElementById("arrayInput").value = "";
+  document.getElementById("result").innerHTML = "";
+});
