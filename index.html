@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duplicate Element Checker</title>
+  <link rel="shortcut icon" href="./images/image.png" type="image/x-icon">
+  <script defer src="script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center px-4 sm:px-6 py-8">
+
+  <div class="w-full max-w-md sm:max-w-lg lg:max-w-xl bg-white p-6 rounded-lg shadow-md">
+    <h1 class="text-xl sm:text-2xl font-bold mb-4 text-center"> Duplicate Element Checker</h1>
+    
+    <input 
+    id="arrayInput" 
+    type="text" 
+    placeholder="Enter numbers or letters separated by commas (e.g., 1,2,3,a,a,b)" 
+    class="w-full p-3 border border-gray-300 rounded mb-4"
+    />
+
+    
+    <div class="flex justify-center">
+    <button 
+      id="checkBtn" 
+      class=" bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded transition-all duration-300">
+      Check Duplicates
+    </button>
+     </div>
+     <div class="flex justify-center">
+    <button id="resetBtn" class="mt-2 bg-gray-300 hover:bg-gray-400 text-black font-semibold py-2 px-4 rounded">
+        Clear
+    </button>
+    </div>
+
+    <div id="result" class="mt-6 space-y-2 text-sm overflow-x-auto break-words"></div>
+  </div>
+
+</body>
+</html>
